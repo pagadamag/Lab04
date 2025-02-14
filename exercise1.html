@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Lab4 – Exercise 1</title>
+</head>
+<body>
+	 <h1>JavaScript Lab</h1>
+	 
+	 <script>
+		// Variable Declaration
+		let x = 2;
+		let y = 4;
+		const z = 10;
+		
+		// Changing variable declared by let
+		x = 5;
+		console.log(x);
+		
+		// Changing variable declared by const
+		//z = 15;
+		//console.log(z);
+		
+		//String Operations
+		let string1 = "Hello, World!"
+		let string2 = "JavaScript is awesome!"
+		
+		console.log(string1.length);
+		
+		let combinedString = string1.concat(string2);
+		console.log(combinedString);
+		
+		// String Templates
+		let name = "Alice"
+		let age = 25;
+		
+		let backtickstring = `My name is ${name} and I am ${age} years old`
+		console.log(backtickstring);
+		
+		// Working with Dates
+		const d = new Date();
+		console.log(d);
+		
+		console.log(d.getFullYear());
+		
+		let month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+		console.log("Month:", d.getMonth() + 1);
+
+		let weekday_names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		console.log("Day:", d.getDay() + 1);
+		
+		let day_of_the_week = weekday_names[d.getDay()];
+		console.log("Day:", day_of_the_week);		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			
+		
+		
+	</script>
+	
+</body>
+</html>
