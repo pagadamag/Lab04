@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Lab4 – Exercise 3</title>
+</head>
+<body>
+	 <h1>JavaScript Lab</h1>
+	 <script>
+		// Arrays and Basic Methods - Step 1
+		
+		let classRoster = [ "Alice", "Tom", "Charlie", "Diana", "Evan"];
+		
+		console.log(classRoster.toString());
+		
+		console.log(classRoster);
+		
+		classRoster.push("Fiona");
+		classRoster.push("Nancy");
+		
+		const firstElement = classRoster.shift();
+		
+
+		console.log(classRoster);
+		console.log(classRoster.length);
+
+		// Objects with Nested Structures - Step 2
+		 let classInfo = {
+		 
+			className: 'ENSF381: Full-Stack Web Development',
+			instructor: 'Dr. Smith',
+			students: classRoster,
+			details: {
+				semester: 'Winter',
+				year: 2025
+			
+			}
+	
+		 };
+		 
+		 
+		 classInfo.schedule = ["Monday", "Wednesday", "Friday"]
+		 classInfo.instructor = 'Dr.Abdellatif';
+		 
+		 console.log("Class Name:", classInfo.className);
+		 console.log("Instructor:", classInfo.instructor);
+		 console.log("Students:", classInfo.students);
+		 
+		 
+		 console.log("Semester:", classInfo.details.semester);
+		 console.log(classInfo);
+		 
+		 // Destructor Class Name
+		 const {className, students} = classInfo;
+		 console.log(className);
+		 console.log(students);
+		 
+		 // Destructure Semester and Properties
+		 const {semester, year} = classInfo.details;
+		 console.log(semester);
+		 console.log(year);
+		 
+		 // Destructure Two student names
+		 const [student1, student2, ...remainingStudents] = classRoster;
+		 console.log(student1);
+		 console.log(student2);
+		 console.log(remainingStudents);
+		 
+		 
+ </script>
+</body>
+</html>
